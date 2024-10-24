@@ -1,0 +1,5 @@
+#!/bin/bash
+#Tervitamine
+echo -n "Tere, "
+echo -n `whoami`
+echo "!"
