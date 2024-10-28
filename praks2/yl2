@@ -1,4 +1,6 @@
 #!/bin/bash
 x=$(whoami)
 v=${x^}
-echo $v
+echo -n "Tere, "
+echo -n $v
+echo "!"
