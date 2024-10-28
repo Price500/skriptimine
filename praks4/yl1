@@ -1,0 +1,8 @@
+#!/bin/bash
+echo "Sisestage arv: "
+read arv
+if [ $(($arv%2)) == 0 ]; then
+	echo "Tegemist on paarisarvuga!"
+else
+	echo "Tegemist on paarituarvuga!"
+fi
