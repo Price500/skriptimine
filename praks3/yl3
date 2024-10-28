@@ -1,0 +1,7 @@
+#!/bin/bash
+echo "Sisesta ainepunktide hulk: "
+read punktid
+echo "Sisesta nädalate arv: "
+read nadalad
+aeg=$(($punktid*26/$nadalad))
+echo  $aeg
