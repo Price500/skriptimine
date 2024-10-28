@@ -1,7 +1,10 @@
 #!/bin/bash
+#Küsimine
 echo "Sisesta ainepunktide hulk: "
 read punktid
 echo "Sisesta nädalate arv: "
 read nadalad
+#Arvutamine
 aeg=$(($punktid*26/$nadalad+($punktid%$nadalad>1)))
+#Esitamine
 echo  $aeg
