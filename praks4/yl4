@@ -1,0 +1,15 @@
+#!/bin/bash
+#Andmete küsimine
+echo "Sisestage grupis olevate reisijate arv: "
+read reisijad
+echo "Sisestage bussis olevate kohtade arv: "
+read kohad
+#Arvutuste teemine
+tais_bussid=$(($reisijad/$kohad))
+maas=$(($reisijad-($kohad*$tais_bussid)))
+#Võrldus
+if [ $maas -gt 0 ]; then
+	tais_bussid=$(($tais_bussid+1))
+fi
+#Tulemuste väljastamine
+echo "Tellida on vaja $tais_bussid bussi!"
