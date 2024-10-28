@@ -1,0 +1,18 @@
+#!/bin/bash
+#Käivitamine
+if [ $# -ne 1 ]; then
+	echo "Käivitada skript koos paarsust vajava arvuga. Nt: $0 5"
+else
+#Parameetrid
+	arv=$1
+	jaak=$(( $arv%2 ))
+#Võrdlus
+	if [ $jaak -eq 0 ]; then
+#Esitamine
+        	echo "Tegemist on paarisarvuga!"
+	else
+        	echo "Tegemist on paarituarvuga!"
+	fi
+fi
+
+
