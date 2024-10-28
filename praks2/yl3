@@ -1,4 +1,6 @@
 #!/bin/bash
-echo "Today is $(date +"%A %B %d %Y")"
+echo "" 
+echo "Today is $(date +"%A, %B %d, %Y")"
 echo "Time is $(date +"%H:%M")"
+echo " "
 cal | tail -n 7
