@@ -1,0 +1,11 @@
+#!/bin/bash
+#Andmete küsimine
+echo "Sisestage grupis olevate reisijate arv: "
+read reisijad
+echo "Sisestage bussis olevate kohtade arv: "
+read kohad
+#Arvutuste teemine
+tais_bussid=$(($reisijad/$kohad))
+maas=$(($reisijad-($kohad*$tais_bussid)))
+#Tulemuste väljastamine
+echo "Täielikult on täidetud $tais_bussid bussi ja maha jääb $maas inimest."
