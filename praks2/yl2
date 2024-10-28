@@ -1,0 +1,4 @@
+#!/bin/bash
+x=$(whoami)
+v=${x^}
+echo $v
