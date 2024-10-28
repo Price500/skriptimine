@@ -1,0 +1,6 @@
+#!/bin/bash
+#Nime küsimine
+echo -n "Sisestage ees- ja perekonnnanimi: "
+read eesnimi perenimi
+#Nime esitamine
+echo "Sinu eesnimi on $eesnimi ja perekonnanimi on $perenimi"
