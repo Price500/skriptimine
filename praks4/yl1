@@ -1,7 +1,10 @@
 #!/bin/bash
+#Küsimine
 echo "Sisestage arv: "
 read arv
+#Võrdlus
 if [ $(($arv%2)) == 0 ]; then
+#Esitamine
 	echo "Tegemist on paarisarvuga!"
 else
 	echo "Tegemist on paarituarvuga!"
