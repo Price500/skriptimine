@@ -1,0 +1,14 @@
+#!/bin/bash
+#Muutuja määramine
+summa=0
+#Tsükli ettevalmistamine
+for arv in {1..10}
+do
+#Tingimuse määramine
+	if [ $(($arv % 2)) -eq 0 ]; then
+#Arvutamine
+		summa=$(($arv + $summa))
+	fi
+done
+#Esitamine
+echo "Esimese kümne paarisarvu summa on $summa"
