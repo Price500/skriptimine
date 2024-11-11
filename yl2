@@ -1,0 +1,17 @@
+#!/bin/bash
+#Arvu küsimine
+echo -e "Sisestage suvaline täisarv: "
+read arv
+#Muutujate seadmine
+summa=0
+vastus=$arv
+#Tsükli määramine
+while [ $arv -ne 0 ]
+do
+#Arvutamine
+	jaak=$(($arv % 10))
+	summa=$(($summa + $jaak))
+	arv=$(($arv / 10))
+done
+#Tulemuse edastamine
+echo "Arvu $vastus ristsumma on $summa"
